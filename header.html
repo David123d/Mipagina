@@ -1,0 +1,136 @@
+<head>
+  <base target="_top">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
+  <script>
+    <?!= include('Styles'); ?> 
+  </script>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+
+    </a>
+    <ul class="navbar-nav mr-auto">
+      <div class="logo-container">
+        <div class="logo-text">INNOVACIÓN</div>
+        <img src="https://drive.google.com/thumbnail?id=12il_kEi5dpZyPkrsPxuB159GHQexkhPz" alt="Logo" class="logo-image">
+        <div class="logo-text">SOLUCIONES</div>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=myURL();?>" class="active">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=myURL();?>?page=acerca">ACERCA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=myURL();?>?page=proyectos">PROYECTOS</a>
+      </li>
+      <li class="dropdown">
+        <a class="nav-link" href="<?=myURL();?>?page=Servicios_Desarrollo">SERVICIOS</a>
+        <ul class="dropdown-content">
+          <li><a href="<?=myURL();?>?page=Servicios_Desarrollo">Desarrollo De Software</a></li>
+          <li><a href="<?=myURL();?>?page=Servicios_microsoft">Herramientas De Microsoft</a></li>
+          <li><a href="<?=myURL();?>?page=Servicios_google">Herramientas De Google</a></li>
+          <li><a href="<?=myURL();?>?page=Servicios_soporte">Soporte Tecnico Y Mantemiento</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?=myURL();?>?page=contact">CONTACTO</a>
+      </li>
+      <!--Modal de whatsapp-->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="icon-container" >
+            <img src="https://lh3.googleusercontent.com/d/1XQWuFDGA2oexudK5oh7pCssi0kM0QiXa=w1000" alt="WhatsApp Icon" class="whatsapp-image">
+        </div>
+        <h4 class="modal-title mt-3" id="contactModalLabel">Contacto por WhatsApp</h4>
+        <p class="lead">¡Hablemos! Estoy disponible en WhatsApp para consultas empresariales y soporte técnico.</p>
+        <p><strong>Número:</strong> +57 318 282 4129</p>
+        <a href="<?=myURL();?>?page=contact"><button type="button" class="btn btn-whatsapp mt-3">Mas opciones de contacto</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!--Modal de linkedin-->
+      <div class="modal fade" id="linkedinModal" tabindex="-1" role="dialog" aria-labelledby="linkedinModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="icon-container">
+          <img src="https://lh3.googleusercontent.com/d/1rVGTplWM5Y7jx_CfnUJc0xDnelaxpKqg=w1000" alt="LinkedIn Icon" class="whatsapp-image">
+        </div>
+        <h4 class="modal-title mt-3" id="linkedinModalLabel">Conéctate en LinkedIn</h4>
+        <p class="lead">¡Construyamos una red! Conéctate conmigo para explorar oportunidades y proyectos.</p>
+        <p><strong>Perfil:</strong> <a href="https://www.linkedin.com/in/johan-david-duitama-pedraza-4573a0304" target="_blank">linkedin.com/in/johan-david-duitama-pedraza-4573a0304</a></p>
+        <a href="https://www.linkedin.com/in/johan-david-duitama-pedraza-4573a0304"><button type="button" class="btn btn-linkedin mt-3">Visitar perfil</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal de Instagram-->
+<div class="modal fade" id="instagramModal" tabindex="-1" role="dialog" aria-labelledby="instagramModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="icon-container">
+          <img src="https://lh3.googleusercontent.com/d/1FroIP333H3aYzaAbeimg6iJ2IW3EaZg3=w1000" alt="Instagram Icon" class="whatsapp-image">
+        </div>
+        <h4 class="modal-title mt-3" id="instagramModalLabel">Sígueme en Instagram</h4>
+        <p class="lead">¡Explora mi contenido! Conéctate conmigo en Instagram para más actualizaciones y proyectos.</p>
+        <p><strong>Perfil:</strong> <a href="https://www.instagram.com/tu-perfil" target="_blank">https://www.instagram.com/johandav2?igsh=MWhyOWplNzJ2N3hxMg==</a></p>
+       <a href="https://www.instagram.com/johandav2?igsh=MWhyOWplNzJ2N3hxMg=="> <button type="button" class="btn btn-instagram mt-3">Visitar perfil</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+<script>
+  // Habilita cerrar el modal haciendo clic afuera o presionando "esc"
+  $('#contactModal').modal({
+    backdrop: true,
+    keyboard: true
+  });
+</script>
+<script>
+  const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+}) 
+
+        function toggleMenu() {
+            const menuLeft = document.getElementById('navMenuLeft');
+            const menuRight = document.getElementById('navMenuRight');
+            menuLeft.classList.toggle('show');
+            menuRight.classList.toggle('show');
+        }
+
+        // Optional: Script to handle the active state of menu items
+        const menuItems = document.querySelectorAll('.navbar a');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menuItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
